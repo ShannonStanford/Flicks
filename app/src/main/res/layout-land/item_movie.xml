@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_margin="5dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivBackdropImage"
@@ -11,7 +12,8 @@
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
+        app:srcCompat="@drawable/flicks_backdrop_placeholder"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -20,5 +22,15 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/ivBackdropImage"
         android:text="Movie Title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_toRightOf="@id/ivBackdropImage" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toEndOf="@+id/ivBackdropImage"
+        android:text="TextView"
+        android:layout_toRightOf="@id/ivBackdropImage" />
 </RelativeLayout>

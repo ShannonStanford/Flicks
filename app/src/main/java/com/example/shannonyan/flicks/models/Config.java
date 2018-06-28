@@ -40,4 +40,8 @@ public class Config {
     public String getImageBaseUrl() {
         return imageBaseUrl;
     }
+
+    public String getBackdropSize() {
+        return backdropSize;
+    }
 }

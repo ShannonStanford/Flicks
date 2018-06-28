@@ -2,13 +2,22 @@ package com.example.shannonyan.flicks.models;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+@Parcel
 public class Movie {
     //values from API
-    private String title;
-    private String overview;
-    private String posterPath; // only the path
-    private String backdropPath;
+    String title;
+    String overview;
+    String posterPath; // only the path
+    String backdropPath;
+    Double voteAverage;
+
+
+    public Movie() {
+
+    }
+
 
 
     //initalize from JSON data
@@ -17,6 +26,7 @@ public class Movie {
         overview = object.getString("overview");
         posterPath = object.getString("poster_path");
         backdropPath = object.getString("backdrop_path");
+        voteAverage = object.getDouble("vote_average");
 
     }
 
@@ -36,6 +46,11 @@ public class Movie {
 
     public String getBackdropPath() {
         return backdropPath;
+    }
+
+    //new
+    public Double getVoteAverage() {
+        return voteAverage;
     }
 }
 
