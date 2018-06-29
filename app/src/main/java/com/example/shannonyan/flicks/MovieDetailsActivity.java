@@ -71,7 +71,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
         final String backdropUrl = config.getImageUrl(config.getBackdropSize(),movie.getBackdropPath());
         im = findViewById(R.id.imageView);
-        //GlideApp.with(this).load(backdropUrl).into(im);
 
         GlideApp.with(this)
                 .load(backdropUrl)

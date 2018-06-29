@@ -26,7 +26,8 @@
         android:singleLine="true"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvOverview"
