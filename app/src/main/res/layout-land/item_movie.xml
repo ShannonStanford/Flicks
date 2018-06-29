@@ -21,9 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/ivBackdropImage"
+        android:layout_toRightOf="@id/ivBackdropImage"
         android:text="Movie Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_toRightOf="@id/ivBackdropImage" />
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/tvOverview"
@@ -31,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_toEndOf="@+id/ivBackdropImage"
+        android:layout_toRightOf="@id/ivBackdropImage"
         android:text="TextView"
-        android:layout_toRightOf="@id/ivBackdropImage" />
+        android:textColor="#b3b3b3" />
 </RelativeLayout>

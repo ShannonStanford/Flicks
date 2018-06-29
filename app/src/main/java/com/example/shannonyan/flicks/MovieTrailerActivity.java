@@ -19,7 +19,7 @@ public class MovieTrailerActivity extends YouTubeBaseActivity
         setContentView(R.layout.activity_movie_trailer);
 
         final String videoID = getIntent().getStringExtra("id");
-        
+
         // temporary test video id
         final String videoId = getIntent().getStringExtra("id");
 
