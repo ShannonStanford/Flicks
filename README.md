@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] Detaila can now be viewed in landscape mode!
+* [X] Detaila can now be viewed in landscape mode!
 
 ## Video Walkthrough
 
