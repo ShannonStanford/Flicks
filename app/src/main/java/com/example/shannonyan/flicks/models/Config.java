@@ -3,7 +3,9 @@ package com.example.shannonyan.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+@Parcel
 public class Config {
     //the base url for loading images
     String imageBaseUrl;
@@ -25,6 +27,10 @@ public class Config {
         //parse the backdrop size and use the option at index 1 or w780 as a fallback
         JSONArray backdropSizeOptions = images.getJSONArray("backdrop_sizes");
         backdropSize = backdropSizeOptions.optString(1, "w780");
+
+    }
+
+    public Config() {
 
     }
 
