@@ -114,10 +114,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
             //lookup view objects by id
             ButterKnife.bind(this, itemView);
-//            ivPosterImage = (ImageView) itemView.findViewById(R.id.ivPosterImage);
-//            ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
-//            tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
-//            tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
 
             itemView.setOnClickListener(this);
         }
